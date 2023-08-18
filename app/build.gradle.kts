@@ -12,9 +12,6 @@ android {
     compileSdk = 33
 
     defaultConfig {
-        /*configurations.all{
-            resolutionStrategy{ force("android.core:core-ktx:1.6.0")}
-        }*/
         applicationId = "com.example.tmdb"
         minSdk = 24
         targetSdk = 33
@@ -75,9 +72,6 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
 
-
-//    implementation("androidx.lifecycle:lifecycle-extensions:2.2.0")
-
     //Fragment
     implementation("androidx.fragment:fragment-ktx:1.6.0")
 
@@ -86,42 +80,36 @@ dependencies {
     implementation("androidx.navigation:navigation-ui-ktx:2.6.0")
     implementation("androidx.navigation:navigation-compose:2.6.0")
 
-   // Dagger Hilt
-    implementation ("com.google.dagger:hilt-android:2.47")
-    kapt ("com.google.dagger:hilt-compiler:2.47")
-    kapt ("androidx.hilt:hilt-compiler:1.0.0")
-    implementation ("com.google.dagger:dagger-android:2.47")
-    implementation ("com.google.dagger:dagger-android-support:2.47")
-    kapt ("com.google.dagger:dagger-android-processor:2.47")
-    kapt ("com.google.dagger:dagger-compiler:2.47")
+    // Dagger Hilt
+    implementation("com.google.dagger:hilt-android:2.47")
+    kapt("com.google.dagger:hilt-compiler:2.47")
+    kapt("androidx.hilt:hilt-compiler:1.0.0")
+    implementation("com.google.dagger:dagger-android:2.47")
+    implementation("com.google.dagger:dagger-android-support:2.47")
+    kapt("com.google.dagger:dagger-android-processor:2.47")
+    kapt("com.google.dagger:dagger-compiler:2.47")
 
     //Retrofit
-    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
-    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
-    implementation ("com.squareup.okhttp3:logging-interceptor:4.10.0")
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.10.0")
 
     //Room
-    implementation ("androidx.room:room-runtime:2.5.2")
-    kapt ("androidx.room:room-compiler:2.5.2")
+    implementation("androidx.room:room-runtime:2.5.2")
+    kapt("androidx.room:room-compiler:2.5.2")
     // Kotlin Extensions and Coroutines support for Room
-    implementation ("androidx.room:room-ktx:2.5.2")
+    implementation("androidx.room:room-ktx:2.5.2")
 
     //Paging
-    implementation ("androidx.paging:paging-runtime-ktx:3.2.0-rc01")
+    implementation("androidx.paging:paging-runtime-ktx:3.2.0-rc01")
 
     //Coroutines
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
 
     //Glide
-    //implementation ("com.github.bumptech.glide:glide:4.15.1")
-    annotationProcessor ("com.github.bumptech.glide:compiler:4.12.0")
-    implementation ("com.github.bumptech.glide:glide:4.15.1")
+    annotationProcessor("com.github.bumptech.glide:compiler:4.12.0")
+    implementation("com.github.bumptech.glide:glide:4.15.1")
     kapt("com.github.bumptech.glide:compiler:4.12.0")
-
-    /*// Lifecycle components
-    implementation ("androidx.lifecycle:lifecycle-extensions:2.2.0")
-    annotationProcessor ("androidx.lifecycle:lifecycle-compiler:2.2.0")*/
-
 
 }
 
